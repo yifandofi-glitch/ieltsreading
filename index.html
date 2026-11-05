@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#2563eb" />
+  <title>屠雅 · 雅思阅读核心词汇</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- 添加到主屏幕（iPhone / 安卓） -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="屠雅" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand">
+        <span class="brand-logo">屠雅</span>
+        <div class="brand-text">
+          <b>雅思阅读核心词汇</b>
+          <small>70 Lists · 1118 词</small>
+        </div>
+      </div>
+    </header>
+
+    <main id="page"><!-- 各 Tab 内容由 JS 渲染 --></main>
+
+    <nav class="tabbar">
+      <button class="tab" data-tab="dash"><span class="ic">🏠</span><span>学习台</span></button>
+      <button class="tab" data-tab="study"><span class="ic">📇</span><span>背单词</span></button>
+      <button class="tab" data-tab="spell"><span class="ic">✍️</span><span>语境</span></button>
+      <button class="tab" data-tab="review"><span class="ic">🔁</span><span>复习</span></button>
+      <button class="tab" data-tab="key"><span class="ic">⭐</span><span>重点</span></button>
+    </nav>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="words-data.js"></script>
+  <script src="articles-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
